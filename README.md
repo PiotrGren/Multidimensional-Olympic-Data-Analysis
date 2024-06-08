@@ -14,6 +14,9 @@
 4. [Docker and MS SQL Server](#docker-and-ms-sql-server)
 5. [KPI File](#kpi-file)
 6. [Dash Application](#dash-application)
+7. [Data Mining](#data-mining)
+8. [License](#license)
+9. [Authors](#authors)
 
 ## Description
 
@@ -176,10 +179,10 @@ The structure of the Dash application in this project consists of the following:
 4. pages/:
     - A directory containing the sub-pages of the Dash application.
     - Sub-pages contained in this directory are automatically visible to the application
-    1. `pages/scc1.py` - a file that performs analysis according to [first scenario](#Scenario-1) and generates charts from the performed analysis, everything is combined into an interactive dashboard of the performed and visualized analysis
-    2. `pages/scc2.py` - a file that performs the analysis according to [the second scenario](#Scenario-2) and generates graphs from the analysis performed, the results are also presented on an interactive dashboard
-    3. `pages/scc3.py` - another file that performs the analysis according to [the third scenario](#Scenario-3) and generates an interactive dashboard with graphs from the analyses performed
-    4. `pages/scc4.py` - the last file performing analyses and generating an interactive dashboard based on them, the file performs a multivariate analysis according to [the last scenario](#Scenario-4)
+    1. `pages/scc1.py` - a file that performs analysis according to [first scenario](#scenario-1) and generates charts from the performed analysis, everything is combined into an interactive dashboard of the performed and visualized analysis
+    2. `pages/scc2.py` - a file that performs the analysis according to [the second scenario](#scenario-2) and generates graphs from the analysis performed, the results are also presented on an interactive dashboard
+    3. `pages/scc3.py` - another file that performs the analysis according to [the third scenario](#scenario-3) and generates an interactive dashboard with graphs from the analyses performed
+    4. `pages/scc4.py` - the last file performing analyses and generating an interactive dashboard based on them, the file performs a multivariate analysis according to [the last scenario](#scenario-4)
     5. `pages/home.py` - a file that generates a home subpage, which contains a very brief description of the issue being pursued
   
 ### How to Edit an Application
@@ -206,13 +209,45 @@ The structure of the Dash application in this project consists of the following:
       ```sh
       dash.register_page(__name__, title='[your_page_title]')
       ```
-  
 
+## Data Mining
 
+Data Mining is the process of discovering patterns, correlations, and anomalies within large datasets to predict outcomes. Using a variety of techniques such as machine learning, statistics, and database systems, Data Mining transforms raw data into useful information. It is a crucial aspect of data analysis, enabling data-driven decision-making by identifying trends and relationships that may not be immediately evident.
 
+### Purpose of Data Mining in This Application
 
+In the context of this Olympic data analysis application, Data Mining is employed to uncover valuable insights from the historical performance data of athletes, countries, and events. The main objectives include:
 
+1. Identifying trends and patterns in the performance of countries and athletes over time.
 
+2. Predicting future outcomes based on historical data.
+
+3. Highlighting significant factors contributing to athletic success.
+
+4. Visualizing complex datasets to facilitate easy interpretation and analysis.
+
+### Implementation of data mining in the application.
+
+Data mining processes are implemented in 4 scripts in the repository, each script performs Data Mining for a separate scenario.
+
+These files are respectively: `S1_DM.py`, `S2_DM.py`, `S3_DM.py`, `S4_DM.py`.
+
+Each file performs the Data Mining process using machine learning models such as ARIMA, Random Forest, etc. The results of the process are presented in graphs, and these are exported to files with .png extension.
+Ultimately, we can view the results in the Dash application because they are added there.
+
+**Exception**: The only exception is the DataMining process in Scenario 3, in which it is carried out in the app, and then an interactive 3D graph is generated showing the relationships between certain anthropometric characteristics of the athletes and their chances of winning a medal.
+
+By leveraging Data Mining techniques, this application provides a robust platform for analyzing Olympic data, offering valuable insights and predictions that can be used by researchers, analysts, and sports enthusiasts.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE.txt file for details.
+
+## Authors
+
+Piotr Greń = Co-developer - https://github.com/PiotrGren
+
+Gabriela Kiwacka - Co-developer - https://github.com/GabrielaKiwacka
 
 
 
@@ -228,6 +263,9 @@ The structure of the Dash application in this project consists of the following:
 4. [Docker i MS SQL Server](#docker-i-ms-sql-server)
 5. [Plik KPI](#plik-kpi)
 6. [Aplikacja Dash](#aplikacja-dash)
+7. [Data Mining](#data-mining)
+8. [Licencja](#licencja)
+9. [Autorzy](#autorzy)
 
 ## Opis
 
@@ -422,3 +460,42 @@ Struktura aplikacji Dash w tym projekcie składa się z następujących element�
       ```sh
       dash.register_page(__name__, title='[twój_tytuł_strony]')
       ```
+
+## Data Mining
+
+Data Mining to proces odkrywania wzorców, korelacji i anomalii w dużych zbiorach danych w celu przewidywania wyników. Korzystając z różnych technik, takich jak uczenie maszynowe, statystyka i systemy baz danych, Data Mining przekształca surowe dane w przydatne informacje. Jest to kluczowy aspekt analizy danych, umożliwiający podejmowanie decyzji w oparciu o dane poprzez identyfikację trendów i relacji, które mogą nie być od razu widoczne.
+
+### Cel Data Mining w tej aplikacji
+
+W kontekście tej aplikacji do analizy danych olimpijskich, eksploracja danych (Data Mining) jest wykorzystywana do odkrywania cennych spostrzeżeń z historycznych danych dotyczących wyników sportowców, krajów i wydarzeń. Główne cele obejmują:
+
+1. Identyfikacja trendów i wzorców w wynikach krajów i sportowców w czasie.
+
+2. Przewidywanie przyszłych wyników na podstawie danych historycznych.
+
+3. Podkreślanie istotnych czynników przyczyniających się do sukcesu sportowego.
+
+4. Wizualizacja złożonych zestawów danych w celu ułatwienia interpretacji i analizy.
+
+### Implementacja eksploracji danych w aplikacji
+
+Procesy eksploracji danych są zaimplementowane w 4 skryptach w repozytoirum, każdy skrypt przeprowadza Data Mining dla osobnego scenariusza.
+
+Te pliki to odpowiednio: `S1_DM.py`, `S2_DM.py`, `S3_DM.py`, `S4_DM.py`
+
+Każdy plik przeprowadza proces Data Mining z wykorzystaniem modeli nauczania maszynowego takich jak np. ARIMA, Random Forest itp. Wyniki procesu przedstawiane są na wykresach, a te eksportowane są do plików z rozszerzeniem .png.
+Ostatecznie wyniki możemy przeglądać w aplikacji Dash ponieważ są one tam dodane.
+
+**Wyjątek**: Jedynym wyjątkiem jest proces DataMining w scenariuszu 3, w którym to jest on przeprowadzany w aplikacji, a następnie generowany jest interaktywny wykres 3D przedstawiający zależności pomiędzy niektórymi cechami antropometrycznymi sportowców, a ich szansą na zdobycie medalu.
+
+Wykorzystując techniki Data Mining, aplikacja ta zapewnia solidną platformę do analizy danych olimpijskich, oferując cenne spostrzeżenia i prognozy, które mogą być wykorzystywane przez badaczy, analityków i entuzjastów sportu.
+
+## Licencja
+
+Ten projekt jest dostępny na licencji MIT. Szczegóły można znaleźć w pliku `LICENSE.txt`.
+
+## Autorzy
+
+Piotr Greń - Co-developer - https://github.com/PiotrGren
+
+Gabriela Kiwacka - Co-developer - https://github.com/GabrielaKiwacka
