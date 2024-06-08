@@ -20,7 +20,9 @@
 
 ## Description
 
+This repository provides a comprehensive analysis of Olympic Games data. The project uses advanced data analysis techniques, including multivariate methods, to uncover hidden patterns and relationships in Olympic data. The analysis covers various aspects, such as athlete performance, medal classifications, and changes over time. The repository includes Python scripts to replicate the analyses performed and adapt the methods to other datasets. The project aims to both educate on data analysis techniques and provide valuable insights into Olympic history and trends.
 
+The project additionally makes use of technologies such as Docker, MS SQL Server, HADOOP, Spark, PySpark and the Dash library (for creating an interactive application) for the delivery of professional and fully functional analysis and the presentation of its results in a professional and easy-to-use interactive manner.
 
 ## Required before use (important)
 
@@ -269,7 +271,9 @@ Gabriela Kiwacka - Co-developer - https://github.com/GabrielaKiwacka
 
 ## Opis
 
+Niniejsze repozytorium zawiera kompleksową analizę danych dotyczących igrzysk olimpijskich. W projekcie zastosowano zaawansowane techniki analizy danych, w tym metody wielowymiarowe, aby odkryć ukryte wzorce i zależności w danych olimpijskich. Analiza obejmuje różne aspekty, takie jak wyniki sportowców, klasyfikacje medalowe, oraz zmiany w czasie. Repozytorium zawiera skrypty Python, które umożliwiają replikację przeprowadzonych analiz oraz adaptację metod do innych zbiorów danych. Projekt ma na celu zarówno edukację w zakresie technik analizy danych, jak i dostarczenie wartościowych wniosków dotyczących historii i trendów olimpijskich.
 
+Projekt dodatkowo wykorzystuje takie technologie jak Docker, MS SQL Server, HADOOP, Spark, PySpark oraz bibliotekę Dash (do tworzenia interaktywnej aplikacji) dla dostarczenia profesjonalnej i w pełni funkcjonalnej analizy oraz przedstawienia jej wyników w profesjonalny i  prosty dla użytkownika, interaktywny sposób.
 
 ## Wymagane przed użyciem (ważne)
 
