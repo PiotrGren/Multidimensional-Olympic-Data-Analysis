@@ -1,0 +1,439 @@
+.checkbox-wrapper-2 .ikxBAC {
+  appearance: none;
+  background-color: #dfe1e4;
+  border-radius: 72px;
+  border-style: none;
+  flex-shrink: 0;
+  height: 12px;
+  margin: 0;
+  position: relative;
+  width: 18px;
+  margin-right: 2px;
+}
+
+.checkbox-wrapper-2 .ikxBAC::before {
+  bottom: -4px;
+  content: "";
+  left: -4px;
+  position: absolute;
+  right: -4px;
+  top: -4px;
+}
+
+.checkbox-wrapper-2 .ikxBAC,
+.checkbox-wrapper-2 .ikxBAC::after {
+  transition: all 200ms ease-out;
+}
+
+.checkbox-wrapper-2 .ikxBAC::after {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 8px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 8px;
+}
+
+.checkbox-wrapper-2 input[type="checkbox"] {
+  cursor: default;
+}
+
+.checkbox-wrapper-2 .ikxBAC:hover {
+  background-color: #c9cbcd;
+  transition-duration: 0s;
+  cursor: pointer;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked {
+  background-color: #ffcc00; /*#781414;*/
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked::after {
+  background-color: #fff;
+  left: 8px;
+}
+
+.checkbox-wrapper-2 :focus:not(.focus-visible) {
+  outline: 0;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked:hover {
+  background-color: #ffcc00a4;
+  cursor: pointer;
+}
+
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #ffcc00;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-shadow: #000 1px 0 4px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  /*min-height: 1rem;*/
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin-top: 1%;
+  margin-right: 2%;
+}
+
+.button-5:hover {
+  transform: translateY(-2px);
+  background-color: #ffee00ee;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:active {
+  background-color: #ffcc00a4;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.button-4 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #076f2aa4;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-shadow: #000 1px 0 4px;
+  cursor: pointer;
+  /*display: inline-flex;*/
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  /*min-height: 1rem;*/
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin: 1% auto;
+}
+
+.button-4:hover {
+  transform: translateY(-2px);
+  background-color: #076f2ae4;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-4:active {
+  background-color: #076f2a60;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+#europe-sc4 {
+  text-align: center;
+}
+#grouping-options > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+
+#age-bins > label {
+  padding: 5px;
+  margin-right: 5px;
+}
+#age-bins {
+  margin-bottom: 2%;
+}
+body {
+  background-color: #323232;
+}
+
+#gender-options > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#common-options > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#data-options > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#data-options {
+  margin-top: 3%;
+  margin-bottom: 9%;
+}
+#grouping-options-pol {
+  margin-top: 2%;
+  margin-bottom: 0.2%;
+}
+#grouping-options-pol > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#grouping-options-pol-tree {
+  margin-top: 0%;
+  margin-bottom: 0.2%;
+}
+#grouping-options-pol-tree > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#pol-scatter-sport {
+  margin-top: 0%;
+  margin-bottom: 0.2%;
+}
+#pol-scatter-sport > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#pol-scatter-agebin {
+  margin-top: 0%;
+  margin-bottom: 0.2%;
+}
+#pol-scatter-agebin > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#pol-scatter-bmibin {
+  margin-top: 0%;
+  margin-bottom: 0.2%;
+}
+#pol-scatter-bmibin > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#parallel-options {
+  margin-top: 0%;
+  margin-bottom: 0.2%;
+}
+#parallel-options > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#continent-options {
+  margin-top: 0%;
+  margin-bottom: 0.2%;
+}
+#continent-options > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#only-continent {
+  margin-top: 0%;
+  margin-bottom: 0.2%;
+}
+#only-continent > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#only-continent .ikxBAC:checked {
+  background-color: #076f2aa4;
+}
+#only-continent .ikxBAC:checked:hover {
+  background-color: #076f2a60;
+}
+#scatter-europe-options {
+  margin-top: 0%;
+  margin-bottom: 4%;
+}
+#scatter-europe-options > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#scatter-europe-options label:nth-of-type(1) {
+  display: inline-block;
+  width: 15%;
+}
+#scatter-europe-options label:nth-of-type(2) {
+  display: inline-block;
+  width: 70%;
+  margin-bottom: 5%;
+}
+#bar-europe-options {
+  margin-top: 0%;
+  margin-bottom: 0.2%;
+}
+#bar-europe-options > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#parcat-europe-options {
+  margin-top: 0%;
+  margin-bottom: 0.2%;
+}
+#parcat-europe-options > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#gender-europe-options {
+  margin-top: 0%;
+  margin-bottom: 0.2%;
+}
+#gender-europe-options > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#common-europe-options {
+  margin-top: 0%;
+  margin-bottom: 0.2%;
+}
+#common-europe-options > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#sunburst-europe-options {
+  margin-top: 0%;
+  margin-bottom: 1%;
+}
+#sunburst-europe-options > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+#only-europe .ikxBAC:checked {
+  background-color: #076f2aa4;
+}
+#only-europe .ikxBAC:checked:hover {
+  background-color: #076f2a60;
+}
+#only-europe {
+  margin-top: 0%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+#only-europe > label {
+  padding: 4px;
+  margin-right: 2px;
+}
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(50, 50, 50, 0.9);
+  padding: 20px;
+  margin: 3% 2%;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0px 0px 100px -27px rgba(66, 68, 90, 1);
+  -moz-box-shadow: inset 0px 0px 100px -27px rgba(66, 68, 90, 1);
+  box-shadow: inset 0px 0px 100px -27px rgba(66, 68, 90, 1);
+}
+.left-column {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.right-column {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+.center-column {
+  clear: both;
+  width: 100%;
+  text-align: center;
+}
+.graph-scatter-pol {
+  width: 100%;
+  /*clear: both;*/
+}
+/* Ustawienie stylów dla poszczególnych elementów menu */
+.menu-element {
+  margin: 0 15px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Styl linków */
+.menu-element a {
+  color: white;
+  text-decoration: none;
+  font-size: 35px; /* Powiększenie tekstu */
+  font-weight: bold; /* Pogrubienie tekstu */
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Efekt kursora pointer przy najeżdżaniu */
+.menu-element a:hover {
+  cursor: pointer;
+  color: #ffcc00; /* Zmiana koloru tekstu na złoty przy najeżdżaniu */
+}
+
+/* Styl animacji podkreślenia tekstu */
+.menu-element a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: #ffcc00;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* Efekt animacji podkreślenia przy najeżdżaniu */
+.menu-element a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Efekt animacji podkreślenia na górze od prawej */
+.menu-element a:hover::before {
+  width: 100%;
+  right: 0;
+}
+
+/* Styl animacji podkreślenia na górze od prawej */
+.menu-element a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: -7px;
+  right: 0;
+  background: #ffcc00;
+  transition: width 0.3s ease, right 0.3s ease;
+}
+
+/* Upewnienie się, że animacja działa na mobilnych urządzeniach */
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;
+  }
+
+  .menu-element {
+    margin: 10px 0;
+  }
+}
+.menu-element a:active {
+  color: #ffcc00c2;
+}
+#home-page-main {
+  text-align: center;
+}
